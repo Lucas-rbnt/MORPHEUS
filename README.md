@@ -62,3 +62,13 @@ $ python wsi_few_shot.py --task breast --k 5 --data_dir /PATH/TO/WSI
 💡 We are aware that biological data can be challenging to download, preprocess, and interpret. We have tried to make the process as straightforward as possible by following clear instructions. However, if any part is unclear or lacks sufficient detail, feel free to open an issue or submit a pull request.
 <br>
 <br>
+
+# Cite
+
+@misc{robinet2025maskedomicsmodelingmultimodal,
+      title={Masked Omics Modeling for Multimodal Representation Learning across Histopathology and Molecular Profiles}, 
+      author={Lucas Robinet and Ahmad Berjaoui and Elizabeth Cohen-Jonathan Moyal},
+      year={2025},
+      eprint={2508.00969},
+      archivePrefix={arXiv},
+}
