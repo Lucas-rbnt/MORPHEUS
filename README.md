@@ -64,7 +64,7 @@ $ python wsi_few_shot.py --task breast --k 5 --data_dir /PATH/TO/WSI
 <br>
 
 # Cite
-
+```
 @misc{robinet2025maskedomicsmodelingmultimodal,
       title={Masked Omics Modeling for Multimodal Representation Learning across Histopathology and Molecular Profiles}, 
       author={Lucas Robinet and Ahmad Berjaoui and Elizabeth Cohen-Jonathan Moyal},
@@ -72,3 +72,4 @@ $ python wsi_few_shot.py --task breast --k 5 --data_dir /PATH/TO/WSI
       eprint={2508.00969},
       archivePrefix={arXiv},
 }
+```
