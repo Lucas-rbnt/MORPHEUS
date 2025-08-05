@@ -2,7 +2,7 @@
 
 We introduce the first multimodal pretraining strategy tailored for cancer biology, using a transformer with a masked modeling objective to reconstruct masked omics modalities (RNA, DNAm, CNV), supported by histopathology.
 
-Supporting code for the corresponding [paper]([https://arxiv.org/](https://www.arxiv.org/pdf/2508.00969))
+Supporting code for the corresponding [paper](https://www.arxiv.org/pdf/2508.00969)
 
 # 🌰 In a nutshell
 **MORPHEUS** is a multimodal pre-training method based on masked omics modeling. 
