@@ -9,7 +9,7 @@ Supporting code for the corresponding [paper](https://www.arxiv.org/pdf/2508.009
 It uses the code from masked modeling in NLP or computer vision, but on omics portions.
 In concrete terms, once pre-trained, the encoder can be used on different tasks and with different combinations of input modalities.
 It can also reconstruct any omic profile from histopathology.
-Unfortunately, due to the UNIv2 licensing restrictions, we are unable to provide pre-trained weights for **MORPHEUS**. 
+Unfortunately, due to the UNI licensing restrictions, we are unable to provide pre-trained weights for **MORPHEUS**. 
 However, we provide step-by-step instructions to reproduce the results exactly.
 
 
