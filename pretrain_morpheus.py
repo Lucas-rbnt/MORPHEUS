@@ -22,7 +22,7 @@ from morpheus.loops import loop_pretrain
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='/home/lucas/')
+    parser.add_argument('--data_dir', type=str, required=True)
     parser.add_argument('--epochs', type=int, default=300)
     parser.add_argument('--hidden_size', type=int, default=256)
     parser.add_argument("--omics_modalities", nargs="+", default=["rna", "dnam", "cnv"], help="List of modalities to use for training")
