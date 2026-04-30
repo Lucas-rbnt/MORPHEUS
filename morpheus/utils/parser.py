@@ -2,7 +2,7 @@ import argparse
 
 def _common_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='/home/lucas/')
+    parser.add_argument('--data_dir', type=str, required=True)
     parser.add_argument('--hidden_size', type=int, default=256)
     parser.add_argument('--num_layers', type=int, default=1)
     parser.add_argument("--n_cpus", type=int, default=16, help="Number of cpus to use for data loading")
