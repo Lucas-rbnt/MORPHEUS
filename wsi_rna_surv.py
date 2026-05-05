@@ -14,7 +14,7 @@ from morpheus.loops import loop_survival
 from morpheus.datasets import WSIRNADataset
 
 
-mtd_choices = ['mome', 'survpath', 'motcat', 'mcat', 'morpheusabmil', 'morpheusproto']
+mtd_choices = ['mome', 'survpath', 'motcat', 'mcat', 'morpheusproto']
 
 
 if __name__ == '__main__':
