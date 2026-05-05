@@ -13,8 +13,8 @@ from morpheus.loops import loop_classification
 from morpheus.datasets import WSIDataset
 
 
-mtd_choices = ['abmil', 'tangle', 'transmil', 'deepsets', 'morpheusabmil', 'morpheusproto']
-task_choices = ['brain', 'lung', 'breast', 'egfr', 'tp53', 'mgmt', 'response', 'pancan', 'atrx', '1p19q']
+mtd_choices = ['abmil', 'tangle', 'transmil', 'deepsets', 'morpheusproto']
+task_choices = ['brain', 'lung', 'breast', 'atrx', '1p19q']
 
 
 if __name__ == '__main__':
