@@ -1,6 +1,6 @@
 """
 Correcting MONAI implementation to define cross-attention layer only when necessary.
-Also adding SNN Block and MLP class for use in the model.
+Also adding SNN Block
 """
 
 from __future__ import annotations
@@ -98,45 +98,9 @@ class TransformerBlock(nn.Module):
 
 def SNN_Block(dim1, dim2, dropout=0.):
     r"""
-    Code borrowed https://github.com/mahmoodlab/MMP/blob/main/src/mil_models/components.py
-    Multilayer Reception Block w/ Self-Normalization (Linear + ELU + Alpha Dropout)
-
-    args:
-        dim1 (int): Dimension of input features
-        dim2 (int): Dimension of output features
-        dropout (float): Dropout rate
+    Code adapted from https://github.com/mahmoodlab/MMP/blob/main/src/mil_models/components.py
     """
     return nn.Sequential(
             nn.Linear(dim1, dim2),
             nn.ELU(),
             nn.AlphaDropout(p=dropout, inplace=False))
-    
-
-class MLP(nn.Module):
-    """
-    Code borrowed from https://github.com/mahmoodlab/TANGLE/blob/main/core/models/mmssl.py
-    """
-    def __init__(self, input_dim, hidden_dim, output_dim, dropout):
-        super(MLP, self).__init__()
-
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.dropout = dropout
-        self.blocks=nn.Sequential(
-            self.build_block(in_dim=self.input_dim, out_dim=hidden_dim),
-            self.build_block(in_dim=hidden_dim, out_dim=hidden_dim),
-            nn.Linear(in_features=hidden_dim, out_features=self.output_dim),
-        )
-        
-
-    def build_block(self, in_dim, out_dim):
-        return nn.Sequential(
-                nn.Linear(in_features=in_dim, out_features=out_dim),
-                nn.LayerNorm(out_dim),
-                nn.ReLU(),
-                nn.Dropout(self.dropout),
-        )
-
-    def forward(self, x):
-        x = self.blocks(x)
-        return x
