@@ -14,7 +14,7 @@ from morpheus.loops import loop_survival
 from morpheus.datasets import WSIDataset
 
 
-mtd_choices = ['abmil', 'tangle', 'transmil', 'deepsets', 'morpheusabmil', 'morpheusproto']
+mtd_choices = ['abmil', 'tangle', 'transmil', 'deepsets', 'morpheusproto']
 
 
 if __name__ == '__main__':
