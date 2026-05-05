@@ -13,7 +13,7 @@ from morpheus.utils.training_setup import _init_full_model, _init_optimizer_and_
 from morpheus.loops import loop_survival
 
 
-mtd_choices = ['mean', 'max', 'concat', 'morpheusabmil', 'morpheusproto']
+mtd_choices = ['mean', 'max', 'concat', 'morpheusproto']
 
 
 if __name__ == '__main__':
